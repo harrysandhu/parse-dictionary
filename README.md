@@ -1,3 +1,3 @@
 # parse-dictionary
 
-# TODO: DOCUMENTATIOM
+# TODO: DOCUMENTATION
