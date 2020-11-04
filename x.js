@@ -6,6 +6,19 @@ Object.size = function(obj) {
     return size;
 };
 var fs = require('fs');
-var obj = JSON.parse(fs.readFileSync('syns.json', 'utf8'));
+var obj = JSON.parse(fs.readFileSync('./websterdic1.json', 'utf8'));
 
-console.log(Object.size(obj))
+count = 0
+
+for (var key in obj) {
+    // skip loop if the property is from prototype
+
+    var words = obj[key]["words"];
+    for (var prop in words) {
+        // skip loop if the property is from prototype
+        count += 1
+
+    }
+}
+
+console.log(count)
